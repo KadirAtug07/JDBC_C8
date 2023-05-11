@@ -1,0 +1,70 @@
+What is JDBC?
+Java Database Connectivity
+--JDBC comes with JDK(Java Development Kit), work RDMS(Relational Database Management System)
+--is has set of interfaces and classes to work with RDMS
+How JDBC works?
+JDBC offers programming level interface that handles mechanic of Java applications that communicating with database or RDMS.
+JDBC consists of two layers;
+1-) JDBC API
+2-) JDBC DRIVER
+JDBC API supports communication between the Java application and JDBC manager
+JDBC DRIVER supports communication between JDBC manager and Database driver
+JDBC is the API THAT your application interacts with
+
+JAVA APP   <--------------------JDBC-------------------->Actual Database
+JDBC does not provide actual implementation
+Each RDMS(like Oracle, MySQL, PostgreSQL, Dbeaver) will provide actual implementation that is known as a driver
+
+we use maven dependency to import that driver
+<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8 -->
+<dependency>
+    <groupId>com.oracle.database.jdbc</groupId>
+    <artifactId>ojdbc8</artifactId>
+    <version>21.9.0.0</version>
+</dependency>
+JDBC has DriverManager class to manage connection to the URL,username,password
+URL: you'll be given this information
+jdbc:oracle:thin:@IP_Address:PORT:SID
+jdbc:oracle:thin:@ec2-54-147-179-30.compute-1.amazonaws.com:1521:XE
+jdbc -> connection that using java
+oracle -> database vendor, RDMS
+thin -> one type oracle driver
+IP_Address -> HostName or IP
+1521 -> Port that is used to connect database
+SID -> sid is for unique identifier
+
+4 important interfaces for JDBC
+
+1-) CONNECTION(STEP 1)
+this interface represents the connection with a specific database
+SQL statement are executed in the context of connection
+Driver will look for url,username,password that you provide
+Connection connection=DriverManager.getConnection(url,username,password)
+2-) STATEMENT (STEP 2)
+this interface represents a static sql statement
+Using this statement object and it's method, you can execute sql statement and get the result of it
+
+There are two ways to create statement object
+a-) default statement will be able to only move forward in ResultSet
+b-) this will be used to create ResultSet that can move freely
+
+Statement statement = connection.createStatement;
+
+3-) RESULTSET (STEP 3)
+Resultset will store the query result ( The query that you want to run)
+ResultSet resultSet=statement.executeQuery('Select * from employees')
+
+*************** CONNECTION,STATEMENT,RESULTSET are the all sources need to be closed after usage******
+4-) close the connection (step 4)
+you'll close the methods at the end of the code
+connection.close();
+statement.close();
+resultSet.close();
+
+
+
+
+
+
+
+
