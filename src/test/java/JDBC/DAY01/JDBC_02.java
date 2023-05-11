@@ -23,10 +23,17 @@ public class JDBC_02 {
         Statement statement=connection.createStatement();
         ResultSet resultSet=statement.executeQuery("Select * from Employees");
 
-        //print all employee names and employee last names
-        while (resultSet.next()){
-            System.out.println(resultSet.getString("first_name") + " " + resultSet.getString("last_name"));
+        while (resultSet.next()) {
+            int employeeID=resultSet.getInt(1);
+            String firstName=resultSet.getString(2);
+            String LastName= resultSet.getString("last_name");
+            System.out.println(employeeID + "," + firstName + "," + LastName);
         }
+
+        //print all employee names and employee last names
+        /*while (resultSet.next()){
+            System.out.println(resultSet.getString("first_name") + " " + resultSet.getString("last_name"));
+        }*/
 
         System.out.println("*****************************************************************");
 
