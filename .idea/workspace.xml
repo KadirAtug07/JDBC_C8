@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85279b56-7e67-493f-9129-0bc7a2b65ed7" name="Changes" comment="commit 5">
-      <change afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JDBC/DAY02/JDBC_02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JDBC/utils/ConfigReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JDBC/utils/DatabaseUtil.java" afterDir="false" />
+    <list default="true" id="85279b56-7e67-493f-9129-0bc7a2b65ed7" name="Changes" comment="commit 6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JDBC/DAY02/JDBC_02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JDBC/DAY02/JDBC_02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JDBC/utils/DatabaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JDBC/utils/DatabaseUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.JDBC_01.test2">
+  <component name="RunManager" selected="JUnit.JDBC_02.Test1">
     <configuration name="JDBC_01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JDBC.DAY01.JDBC_01" />
       <module name="JDBC_C8" />
@@ -108,8 +107,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JDBC_02.Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JDBC_C8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDBC.DAY02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="JDBC.DAY02" />
+      <option name="MAIN_CLASS_NAME" value="JDBC.DAY02.JDBC_02" />
+      <option name="METHOD_NAME" value="Test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JDBC_02.Test1" />
         <item itemvalue="JUnit.JDBC_01.test2" />
         <item itemvalue="JUnit.JDBC_01.test1" />
         <item itemvalue="Application.JDBC_02" />
@@ -126,7 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683676981796</updated>
       <workItem from="1683676983108" duration="6673000" />
-      <workItem from="1683845536046" duration="8582000" />
+      <workItem from="1683845536046" duration="10227000" />
     </task>
     <task id="LOCAL-00001" summary="commit 2">
       <created>1683846671430</created>
@@ -156,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683853095490</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit 6">
+      <created>1683854923989</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683854923989</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +201,7 @@
     <MESSAGE value="commit 3" />
     <MESSAGE value="commit 4" />
     <MESSAGE value="commit 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 5" />
+    <MESSAGE value="commit 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 6" />
   </component>
 </project>

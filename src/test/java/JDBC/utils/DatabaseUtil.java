@@ -18,6 +18,7 @@ public class DatabaseUtil {
             connection= DriverManager.getConnection(url,userName,password);
             System.out.println("Connection is sucsessful");
         }catch (SQLException s){
+            s.printStackTrace();
             System.out.println("Connection is failed");
         }
     }
