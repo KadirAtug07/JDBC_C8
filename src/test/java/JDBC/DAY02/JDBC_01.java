@@ -126,11 +126,73 @@ public class JDBC_01 {
         resultSet.next();
         resultSet.next();
         resultSet.next();
-        //I'm in third row now
+        System.out.println("***********Wrong Answer**************");
+        //I'm in 4th row now
         //I need to print all country names from first row to the last row
+        while (resultSet.next()) {
+            System.out.println(resultSet.getString(2) + " row number: " + resultSet.getRow());
+        }
+        System.out.println("***********Right Answer**************");
+        resultSet.beforeFirst();
+        while (resultSet.next()) {
+            System.out.println(resultSet.getString(2) + " row number: " + resultSet.getRow());
+        }
+        System.out.println("*******************************************");
+        //i'm in first row
+        resultSet.first();
+        //I need to move to last row
+        resultSet.last();
+        System.out.println("i'm in " + resultSet.getRow());
+        System.out.println("Country ID: " + resultSet.getString(1) + "\n" +
+                "Country Name: " + resultSet.getString("country_name"));
 
+        resultSet.afterLast();
+        //no result since i'm out of table in the below
+        /*System.out.println("Country ID: " + resultSet.getString(1) + "\n" +
+                "Country Name: " + resultSet.getString("country_name"));*/
+
+        resultSet.next();
+        resultSet.next();
+        resultSet.next();
+        resultSet.next();
+        resultSet.next();
+        resultSet.previous();
+        System.out.println("i'm in " + resultSet.getRow());
+        System.out.println("Country ID: " + resultSet.getString(1) + "\n" +
+                "Country Name: " + resultSet.getString("country_name"));
+
+        //i'm in first row
+        resultSet.first();
+        System.out.println();
+        System.out.println("********** Print Country Names from last row to the first row******************");
+        resultSet.afterLast();
+        while (resultSet.previous()) {
+            System.out.println("i'm in " + resultSet.getRow());
+            System.out.println("Country ID: " + resultSet.getString(1) + "\n" +
+                    "Country Name: " + resultSet.getString("country_name"));
+        }
+
+        //I'm in first row
+        resultSet.first();
+        //I'll check if i'm in first row
+        System.out.println(resultSet.isFirst());
+        if (resultSet.isFirst()){
+            System.out.println("Country ID: " + resultSet.getString(1) + "\n" +
+                    "Country Name: " + resultSet.getString("country_name"));
+        }
+
+        resultSet.last();
+        System.out.println(resultSet.isLast());
+
+        resultSet.beforeFirst();
+        System.out.println(resultSet.isBeforeFirst());
+
+        resultSet.afterLast();
+        System.out.println(resultSet.isAfterLast());
 
     }
+
+
 
 
 }
