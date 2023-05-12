@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85279b56-7e67-493f-9129-0bc7a2b65ed7" name="Changes" comment="commit 4">
+    <list default="true" id="85279b56-7e67-493f-9129-0bc7a2b65ed7" name="Changes" comment="commit 5">
+      <change afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/JDBC/DAY02/JDBC_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/JDBC/utils/ConfigReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/JDBC/utils/DatabaseUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JDBC/DAY02/JDBC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JDBC/DAY02/JDBC_01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +126,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683676981796</updated>
       <workItem from="1683676983108" duration="6673000" />
-      <workItem from="1683845536046" duration="6704000" />
+      <workItem from="1683845536046" duration="8582000" />
     </task>
     <task id="LOCAL-00001" summary="commit 2">
       <created>1683846671430</created>
@@ -146,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683851263512</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit 5">
+      <created>1683853095490</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683853095490</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +177,7 @@
     <MESSAGE value="commit 2" />
     <MESSAGE value="commit 3" />
     <MESSAGE value="commit 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 4" />
+    <MESSAGE value="commit 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 5" />
   </component>
 </project>
